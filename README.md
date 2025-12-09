@@ -79,4 +79,4 @@ This tool relies on the Linux `/proc` filesystem. To run it on Windows:
 3.  Navigate to the folder and compile as shown above.
 
 ## Flowchart
-A visual representation of the program's logic is available in [flowchart.md](./flowchart.md).
+A visual representation of the program's logic is available in [flowchart.svg](./flowchart.svg).
