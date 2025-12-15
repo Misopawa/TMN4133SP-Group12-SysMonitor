@@ -156,9 +156,10 @@ void getCPUUsage() {
     printf("\n--- CPU Usage ---\n");
     printf("Measuring CPU usage (sampling 1 second)...\n");
 
+    //Take first CPU usgae snapshot
     read_cpu_stats(&stat1);
     sleep(1);
-    read_cpu_stats(&stat2);
+    read_cpu_stats(&stat2);  //Take second CPU Usage snapshot after 1 second
 
     unsigned long long total1 = stat1.user + stat1.nice + stat1.system + stat1.idle + 
                                 stat1.iowait + stat1.irq + stat1.softirq + stat1.steal;
